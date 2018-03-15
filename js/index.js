@@ -17,6 +17,17 @@ $("input[name='kh']").focus(function(){
     }  
 }); 
 
+//展开
+$(".jian").click(function () {  
+      $(".hovS").show(); 
+      $(".jian").hide();
+      $(".jia").show();
+	});
+$(".jia").click(function () {  
+  $(".hovS").hide(); 
+  $(".jian").show();
+  $(".jia").hide();
+});
 
 //选项卡插件
 (function ($) {

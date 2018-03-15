@@ -170,22 +170,63 @@
                 height:30px;
                 border-radius:50%;
                 background-color:#86685e;
+                cursor: pointer;
             }
         }
 }
 
 /*active*/
-.active{
+.activeBig{
     width:1200px;
     margin:0 auto;
     margin-top:10px;
     .active-left{
+        float:left;
         position: relative;
-        width:202px;
+        width:200px;
         height:370px;
-        background:pink;
+//      background:pink;
+        border:1px solid #e7e7e7;
+        .hovS{
+            display:none;
+            position: absolute;
+            left:0;
+            top:0;
+            ul{
+                li{
+                    float:left;
+                    width:98px;
+                    line-height:50px;
+                    background: #f8f8f5;
+                    border:1px solid #ded9d3;
+                    text-align: center;
+                    a{
+                        color:#333333;
+                        font-size:12px;
+                    }
+                }
+                    li:hover a{
+                        color:#d85a44;
+                    }
+                .last{
+                    width:198px;
+                }
+            }
+            p{
+                position: absolute;
+                left:0px;
+                top:158px;
+                font-size: 12px;
+                line-height:50px;
+                height:50px;
+                text-align: center;
+                width:200px;
+                color:white;
+                background: #9c361f;
+            }
+        }
         .tab{
-            width:202px;
+            width:200px;
             .menu{
                 
                 overflow: hidden;
@@ -202,7 +243,7 @@
                     text-align: center;
                     float:left;
                     font-size:12px;
-                    width:67px;
+                    width:66px;
                     line-height:30px;
                     background:#e0dbd8;
                     border: 1px solid #bfb7aa;
@@ -220,20 +261,26 @@
                    li{
                         overflow: hidden;
                         background:url(../img/dot.jpg) no-repeat 0 center;
-                        color:#888888;
                         line-height:24px;
                         height:24px;
                         text-indent: 10px;
                         margin-left:10px;
-                        } 
-                    
+                         
+                        a{
+                          color:#888888;  
+                        }
+                    }
+                    li:hover a{
+                        text-decoration: underline;
+                    }
                 }
-                .active {
-                    display: block;
-                }     
+                    
             }
+            .active {
+                    display: block;
+                } 
         }
-        p{
+        .jian{
             position: absolute;
             top:0;
             left:-20px;
@@ -241,9 +288,100 @@
             height:20px;
             background: url(../img/jian.jpg) no-repeat;
         }
+        .jia{
+            position: absolute;
+            top:140px;
+            left:-20px;
+            width:20px;
+            height:20px;
+            background: url(../img/jia.jpg) no-repeat;
+            display:none;
+        }
     }
     .active-right{
+        float:left;
+        width:990px;
+        height:370px;
+        .menu{
+            height:60px;
+            overflow: hidden;
+            border-bottom:2px solid #d3161b;
+            .active{
+                background: #d3161b;
+                a,span{
+                    color:#fff;
+                }
+            }
+            li{
+                padding:10px 0 0 22px;
+                width:172px;
+                height:50px;
+                background: #ffe8e8;
+                float:left;
+                margin:0 2px;
+                font-size: 20px;
+                a{
+                    font-weight: 700;
+                   color:#73584a; 
+                }
+                span{
+                    color:#73584a;
+                    display:block;
+                    font-size:12px;
+                }
+            }
+        }
         
-        
+        .panel{
+            overflow: hidden;
+            margin-top: 10px;
+            display: none;
+            .det{
+                border:1px solid #e5e5e5;
+                float:left;
+                margin-left:14px;
+                overflow: hidden;
+                width:182px;
+                height:298px;
+                .time{
+                    height:26px;
+                    background:#f8f8f5 url(../img/sprite.png) no-repeat 0 -92px;
+                    
+                }
+                img{
+                    margin:10px 0px 10px 38px;
+                }
+                p{
+                    height:74px;
+                    background:#f4f4f0;
+                    padding:0px 0 0 6px;
+                    a{
+                        color:#5b473d;
+                        font-size:12px;
+                    }
+                    span{
+                        padding-top:12px;
+                        display:block;
+                        label{
+                            color:#9999a1;
+                            font-size:12px;
+                        }
+                        strong{
+                            color:#c53f4c;
+                            
+                        }
+                    }
+                }
+                .shopping{
+                    line-height:26px;
+                    color:#bbb;
+                    font-size:14px;
+                    margin-left:12px;
+                }
+            }
+        }
+        .active{
+            display:block;
+        }
     }
 }
