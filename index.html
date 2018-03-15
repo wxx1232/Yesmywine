@@ -3,7 +3,126 @@
 <head>
 <meta charset="UTF-8">
 <title>法国红酒,进口红酒,葡萄酒,洋酒,白酒网上专销-Yesmywine也买酒知名红酒商城[V3版]</title>
+<link rel="stylesheet" href="css/common.css" />
+<link rel="stylesheet" href="css/index.css" />
 </head>
 <body>
+	<!--top_nav-->
+	<div class="top_nav">
+		<!--navLeft-->
+		<ul class="navLeft">
+			<li><span>10257342</span>位会员的选择</li>
+			<li class="login"><a href="javascript:;">登录</a>|</li>
+			<li class="reg"><a href="javascript:;">注册</a></li>
+		</ul>
+		<!--navRight-->
+		<ul class="navRight">
+			<li>
+				<a class="down" href="javascript:;">会员俱乐部</a>
+				<em>|</em>
+			</li>
+			<li>
+				<a class="down colo" href="javascript:;">签到</a>
+				<em>|</em>
+			</li>
+			<li data-toggle="arrowdown" id="arrow1" class="arrow">
+				<a href="javascript:;">我的账户<span></span></a>
+				<span class="down-icon"></span>
+				<em>|</em>
+			</li>
+			<li data-toggle="arrowdown" id="arrow2" class="arrow">
+				<span class="phone"></span>
+				<a href="javascript:;">手机版</a>
+				<em>|</em>
+			</li>
+			<li>
+				<a class="down colo" href="javascript:;">设置勿扰</a>
+			</li>
+			<div class="hidden-box" id="hidden">
+				<b></b>
+				<ul class="hidden">
+					<li class="dis"><a href="javascript:;">我的订单</a></li>
+					<li><a href="javascript:;">我的存酒库</a></li>
+					<li><a href="javascript:;">我的优惠券</a></li>
+					<li><a href="javascript:;">我的收藏夹</a></li>
+				</ul>
+			</div>
+		</ul>
+	</div>
+	<!--logo-->
+	<div class="head">
+		<div class="head-left">
+			<div class="logo">
+				<a href="javascript:;"></a>
+			</div>
+			<div class="logo2"></div>
+			<img src="img/sydt.gif"/>
+		</div>
+		<div class="head-right">
+			<div class="head-search">
+				<form>
+					<input type="text" name="kh" class="search" id="search"/><input type="submit" class="btn"/>
+				</form>
+				<p>
+					<a href="javascript:;">黑啤清仓</a>
+					<a href="javascript:;">特色陈年老酒</a>
+				</p>
+			</div>
+			<div class="cart"><span>0</span></div>
+			
+		</div>
+	</div>
+	<!--nav-main-->
+	<ul class="mainNav">
+		<li class="navFirst"><a href="javascript:;">首页</a><span></span></li>
+		<li><a href="javascript:;">超值抢购</a><span></span></li>
+		<li><a href="javascript:;">精品闪购</a><span></span></li>
+		<li><a href="javascript:;">名庄特卖</a><span></span></li>
+		<li><a href="javascript:;">非常大牌</a><span></span></li>
+		<li><a href="javascript:;">香港免税</a><span></span></li>
+		<li><a href="javascript:;">清仓特卖</a><span></span></li>
+		<li><a href="javascript:;">老酒馆</a><span></span></li>
+		<li><a href="javascript:;">全球海涛</a><span></span></li>
+		<li><a href="javascript:;">也买快送</a></li>
+	</ul>
 </body>
 </html>
+<script src="js/jquery.1.8.3.js"></script>
+<script src="js/top-hidden.js"></script>
+<script src="js/index.js"></script>
+<script>
+	$(".arrow").mouseenter(function () {  
+      $(".hidden-box").show();  
+	}); 
+	$(".arrow").mouseleave(function () {  
+      $(".hidden-box").hide();  
+	}); 
+	$(".hidden-box").mouseenter(function () {  
+      $(".hidden-box").show();  
+	});
+	$(".hidden-box").mouseleave(function () {  
+      $(".hidden-box").hide();  
+	}); 
+  	
+  	
+//$(document).ready(function (){ 
+//	$('.arrow').hover( //鼠标滑过导航栏目时 
+//	function(){ 
+//		$('.hidden-box').show(); //显示下拉列表 
+//		}, 
+//	function(){ 
+//		$('.hidden-box').hide(); //鼠标移开后隐藏下拉列表 
+//	}); 
+//	$('.hidden-box').hover( //鼠标滑过下拉列表自身也要显示，防止无法点击下拉列表 
+//		function(){ 
+//		$('.hidden-box').show(); 
+//		}, 
+//		function(){ 
+//		$('.hidden-box').hide(); 
+//		}); 
+//	$('.dist').hover( //鼠标滑过下拉列表是改变当前栏目样式 
+//		function(){ 
+//		$(".dist").css({'color':'#fff','background-color':'#c53f4c'}); 
+//		}); 
+//}); 
+</script>

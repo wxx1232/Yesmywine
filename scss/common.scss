@@ -1,0 +1,272 @@
+/*common*/
+body,div,p,ul,ol,li,dl,dt,dd,table,tr,td,th,form,h1,h2,h3,h4,h5,h6,fieldset,figure,hr,img,input{
+    margin:0;
+    padding:0;
+}
+html,body{
+    height: 100%;
+    width:100%;
+}
+body{
+    font-family: "微软雅黑",Arial;
+}
+a{
+    text-decoration: none;
+}
+img{
+    border: none;
+    display:block;
+}
+ol,ul{
+    list-style: none;
+}
+//万能清除浮动法
+.clear{
+    zoom:1;
+}
+.clear:after{
+    content:"";
+    clear:both;
+    display:block;
+}
+/*top_nav*/
+.top_nav{
+   width:100%;
+   line-height:29px;
+   background:#ece7e3;
+   height:29px;
+   border-bottom:1px solid #e4dfda;
+   font-size:12px;
+/* navLeft*/
+   .navLeft{
+       margin-left:40px;
+       li{
+           float:left;
+            a{
+                color:#85726c;
+            }
+            span{
+                color:#c53f4c;
+            }
+       }
+        .login{
+            a{
+                margin-left:16px;
+                margin-right:8px;
+            }
+        }
+        .reg{
+            margin-left:8px;
+        }
+   }
+/*navRight*/
+    .navRight{
+            margin-right:32px;
+            float:right;
+            position: relative;
+        li{
+           display:inline-block;
+       
+            a{
+                color:#85726c;
+            }
+            .down{
+                padding-left:6px;
+                padding-right:9px;
+            }
+            .colo{
+                font-weight: 700;
+            }
+            em{
+                font-style: normal;
+            }
+        }
+        li:hover a{
+            color:#c53f4c;
+        }
+        #arrow1{
+                padding-left:6px;
+            .down-icon{
+                background:url(../img/down.jpg) no-repeat;
+                display:inline-block;
+                width:7px;
+                height:4px;
+                vertical-align: middle;
+                margin-left: 4px;
+                padding-right:8px;
+            }
+        }
+        #arrow2{
+            padding-left:6px;
+            .phone{
+                background:url(../img/phone.jpg) no-repeat;
+                display:inline-block;
+                width:12px;
+                height:15px;
+                vertical-align: middle;
+                padding-right:3px;
+            }
+            a{
+                padding-right:9px;
+            }
+        }
+        
+    }
+/* hidden-box*/
+    .hidden-box{
+        width:108px;
+        background: #fff;
+        position: absolute;
+        left: 124px;
+        top: 30px;
+        z-index: 1;
+        display:none;
+        box-shadow: 0 0 5px #eee;
+        ul{
+            padding:4px 0 2px 0px;
+            .dist{
+                background: red;
+                color:#fff;
+            }
+            li{
+                padding-left:8px;
+                width:100px;
+                float:left;
+                line-height: 26px;
+            }
+        }
+        b{
+            position: absolute;
+            left:42px;
+            top:-7px;
+            width:13px;
+            height:7px;
+            display: block;
+            background: url(../img/arrows.jpg) no-repeat;
+        }
+    }
+}
+/*logo*/
+.head{
+    background:#f1eeed;
+    overflow: hidden;
+    .head-left{
+        float:left;
+        padding-right:60px;
+        .logo{
+            margin-left:32px;
+            vertical-align: bottom;
+            float:left;
+            a{
+                display:block;
+                width:200px;
+                height:100px; 
+                background:url(../img/logo2.png) no-repeat;
+            }
+        }
+        .logo2{
+            vertical-align: bottom;
+            width:163px;
+            height:100px;
+            float:left;
+            background:url(../img/logo.png) no-repeat;
+        }
+        img{
+            float:left;
+        }
+    }
+    .head-right{
+        float:left;
+        padding-top:30px;
+        .head-search{
+            float:left;
+            padding-bottom: 14px;
+            form{
+                
+                .search{
+                    width:380px;
+                    height:33px;
+                    border:1px solid #ed1c24;
+                    outline: none;
+                    text-indent: 4px;
+                }
+                .btn{
+                    width:80px;
+                    height:35px;
+                    background: #ed1c24;
+                    border:none;
+                    vertical-align: bottom;
+                    font-size:16px;
+                    color:white;
+                }
+            }
+            p{
+                a{
+                    color:#a89893;
+                    font-size:12px;
+                }
+            }
+            p:hover{
+                   color:#c53f4c;
+                }
+            
+        }
+        .cart{
+            position: relative;
+            margin-left: 30px;
+            float:left;
+            width:123px;
+            height:35px;
+            background: url(../img/bg_header5.png) no-repeat 0 -160px;
+            span{
+                display: inline-block;
+                z-index: 1;
+                position: absolute;
+                width:22px;
+                height:22px;
+                background:url(../img/bg_header5.png) no-repeat -123px -160px;
+                text-align: center;
+                font-size:12px;
+                color:white;
+                top: -14px;
+                left: 12px;
+            }
+        }
+    }
+}
+
+/*nav-main*/
+.mainNav{
+    overflow: hidden;
+    background: #d3161b;
+    line-height: 34px;
+    font-size:14px;
+    li{
+        float:left;
+        a{
+            padding:0 20px;
+            color:#ede8e6;
+//          background: url(../img/nav-line.jpg) no-repeat;   
+        }
+        span{
+            background: url(../img/nav-line.jpg) no-repeat;
+            width:2px;
+            height:19px;
+            display:inline-block;
+            vertical-align: middle;
+        }
+    }
+    .navFirst{
+        margin-left: 232px;
+        background:none ;
+       
+    }
+    li:hover{
+        background:#bc0001 ;
+    }
+    li:hover span{
+        display:none;
+    }
+}
+
+
