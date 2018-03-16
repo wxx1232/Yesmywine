@@ -180,7 +180,9 @@
     width:1200px;
     margin:0 auto;
     margin-top:10px;
-    overflow: hidden;
+    height:370px;
+    clear:both;
+//  overflow: hidden;
     .active-left{
         float:left;
         position: relative;
@@ -252,6 +254,7 @@
                     cursor: pointer;
                 }
             }
+            
             .panel {
                 margin-top:10px;
                 font-size:12px;
@@ -333,17 +336,19 @@
             }
         }
         
+        
         .panel{
             overflow: hidden;
             margin-top: 10px;
             display: none;
+            padding-left: 20px;
             .det{
                 border:1px solid #e5e5e5;
                 float:left;
-                margin-left:14px;
                 overflow: hidden;
                 width:182px;
                 height:298px;
+                margin-right:8px;
                 .time{
                     line-height:26px;
                     background:#f8f8f5 url(../img/sprite.png) no-repeat 6px -91px;
@@ -492,7 +497,7 @@
     margin:15px auto 0;
     .header{
         height:36px;
-        h2{
+        .fir{
             float:left;
             width:142px;
             color:#666666;
@@ -538,56 +543,142 @@
     .import-first{
         float:left;
         .imp-b{
-        height:250px;
-        background:pink;
-        .uls{
-            float:left;
-            width:202px;
-            background:#d6c9bc;
-            overflow: hidden;
-            li{
-                border:1px solid #dfd5ca;
-                width:99px;
-                height:48px;
+            margin-bottom: 12px;
+            height:250px;
+            background:pink;
+               .uls{
                 float:left;
-            }
-        }
-        .carousel{
-            float:left;
-            width:760px;
-            overflow: hidden;
-            position: relative;
-            .carousel-list{
-                width:1520px;
+                width:202px;
+                background:#d6c9bc;
+                overflow: hidden;
                 li{
+                    border:1px solid #dfd5ca;
+                    width:99px;
+                    height:48px;
                     float:left;
                 }
             }
-            .dots{
-                position: absolute;
-                left:308px;
-                bottom:0;
-                a{
-                    width:30px;
-                    line-height:30px;
-                    margin:0 2px;
-                    border-radius: 50%;
-                    background:#86685e;
-                    float: left;
-                    color:#fff;
+        }
+        .imp2{
+            margin-top:15px;
+            .tit{
+                margin-top: 15px;
+                width:960px;
+                overflow: hidden;
+                border-bottom: 1px solid #d2d2ce;
+                h3{
+                    color:#715b4a;
+                    font-size:12px;
+                    float:left;
+                    line-height: 30px;
+                    
+                }
+                span{
+                    color:#5a463d;
+                    font-size:12px;
+                    float:right;
+                    display:inline-block;
+                    width:60px;
+                    line-height:20px;
+                    margin-top:3px;
+                    background:#f4f4f0;
                     text-align: center;
+                    border-radius: 20px;
                 }
-                .active{
-                    background:#7e0001;
-                }
+            }
+            .select{
+                width:960px;
+                overflow: hidden;
+                
             }
         }
     }
-    }
 }
+
 .imp-right{
     height:976px;
     background: yellowgreen;
     float:right;
     width:238px;
+    .right-b{
+        background:#f4f4f0;
+        .bt{
+            height:45px;
+            border-bottom:1px solid #dddddd;
+        }
+        .bt2{
+            .btfirst{
+                border-bottom:1px solid #dddddd;
+                overflow: hidden;
+                .btHidden{
+                    line-height:40px;
+                    padding-left: 5px;
+                    display:none;
+                    .num{
+                        display:inline-block;
+                        width: 24px;
+                        line-height: 20px;
+                        color:#5b473b;
+                        text-align: center;
+                       background: url(../img/sprite.png) no-repeat -84px -70px; 
+                    }
+                    .show{
+                        color:#5b473d;
+                        font-size:12px;
+                    }  
+                }
+                
+                .imgs{
+                    float:left;
+                    position: relative;
+                    width:70px;
+                    height:104px;
+                    background:#fff;
+                    margin:10px 0 10px 12px;
+                    padding:6px 0 0 10px;
+                    em{
+                        color:#fff;
+                        font-style:normal;
+                        position: absolute;
+                        left:0;
+                        top:0;
+                        width: 24px;
+                        line-height: 20px;
+                        text-align: center;
+                        background: url(../img/sprite.png) no-repeat -60px -70px; 
+                    }
+                }
+                .pls{
+                    width:130px;
+                    float:left;
+                    margin:{
+                        left:10px;
+                        top:20px;
+                    }
+                    a{
+                        
+                        color:#5b473d;
+                        font-size:12px;
+                    }
+                    .shouchu{
+                        font-size:12px;
+                        color:#999999;
+                        font-style: normal;
+                        line-height: 36px;
+                        span{
+                            color:#5b475e;
+                        }
+                    }
+                    span{
+                        color:#c53f4c;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+#two{
+    background:url(../img/title_01.png) no-repeat 0px 0px;
 }

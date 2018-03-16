@@ -1,3 +1,17 @@
+//top
+$(".arrow").mouseenter(function () {  
+      $(".hidden-box").show();  
+	}); 
+	$(".arrow").mouseleave(function () {  
+      $(".hidden-box").hide();  
+	}); 
+	$(".hidden-box").mouseenter(function () {  
+      $(".hidden-box").show();  
+	});
+	$(".hidden-box").mouseleave(function () {  
+      $(".hidden-box").hide();  
+	}); 
+
 //input默认提示信息设置
 var str="输入您要查找的商品名称";
 $("input[name='kh']").attr('style','color:#cccccc;');  

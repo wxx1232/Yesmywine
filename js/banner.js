@@ -1,4 +1,4 @@
-//banner
+//banner 淡入淡出
 var arr=["../img/banner1.jpg","../img/banner2.jpg","../img/banner3.jpg","../img/banner4.jpg","../img/banner5.jpg","../img/banner6.jpg","../img/banner7.jpg","../img/banner8.jpg"];
 var ord = 0;//代表当前图片的序号，从0开始。
 var myTimer = null;

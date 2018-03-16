@@ -1,0 +1,31 @@
+        .carousel{
+            float:left;
+            width:760px;
+            overflow: hidden;
+            position: relative;
+            .carousel-list{
+                position: relative;
+                width:1520px;
+                li{
+                    float:left;
+                }
+            }
+            .dots{
+                position: absolute;
+                left:308px;
+                bottom:10px;
+                a{
+                    width:30px;
+                    line-height:30px;
+                    margin:0 2px;
+                    border-radius: 50%;
+                    background:#86685e;
+                    float: left;
+                    color:#fff;
+                    text-align: center;
+                }
+                .active{
+                    background:#7e0001;
+                }
+            }
+        }
