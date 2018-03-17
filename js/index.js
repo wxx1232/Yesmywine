@@ -75,3 +75,4 @@ $(".jia").click(function () {
 })(jQuery);
 
 $('.one').tab();
+
