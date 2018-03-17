@@ -20,7 +20,8 @@ $("input[name='kh']").focus(function(){
    var v=this.value;  
    if(v == str){  
         $("input[name='kh']").attr('style','color:;');  
-        $("input[name='kh']").attr('style','border: 1px solid #9d5691;');  
+        $("input[name='kh']").attr('style','border: 1px solid #9d5691;');
+        $("input[name='kh']").attr('style','background:#fff;');
         $(this).val("").attr('name','kh');  
     }  
 }).blur(function(){  
@@ -76,3 +77,14 @@ $(".jia").click(function () {
 
 $('.one').tab();
 
+//section5
+//手风琴效果
+$('.box li').mouseover(function () {
+			$(this).stop(true).animate({
+				width:450
+			}).children().css('display', 'block').end().siblings().stop(true).animate({width:186}).children().css('display', 'block');
+		});
+
+		$('.box').mouseout(function () {
+			$(this).children().animate({width:240}).children().css('display', 'block');
+		});
