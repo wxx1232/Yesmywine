@@ -186,7 +186,6 @@ ol,ul{
                 .search{
                     width:380px;
                     height:33px;
-                    border:1px solid #ed1c24;
                     outline: none;
                     text-indent: 4px;
                     background:#f4f1f0;
@@ -194,11 +193,12 @@ ol,ul{
                 .btn{
                     width:80px;
                     height:35px;
-                    background: #ed1c24;
+                    text-indent: -999999px;
                     border:none;
                     vertical-align: bottom;
                     font-size:16px;
                     color:white;
+                    cursor: pointer;
                 }
             }
             p{
@@ -239,7 +239,6 @@ ol,ul{
 /*nav-main*/
 .mainNav{
     overflow: hidden;
-    background: #d3161b;
     line-height: 34px;
     font-size:14px;
     li{
@@ -269,6 +268,118 @@ ol,ul{
         display:none;
     }
 }
+
+.nav{
+    position: relative;
+    
+}
+/*navLeft*/
+.categorys{
+    width:200px;
+    position: absolute;
+    left:32px;
+    top:0px;
+    background: rgba(255,255,255,.1);
+    z-index: 1;
+    
+    h3{
+        background:rgba(161,16,17,.5) url(../img/1.jpg) no-repeat 10px 13px;
+        font-size:14px;
+        line-height:34px;
+        font-weight: bold;
+        a{
+            margin-left:30px;
+            margin-right:50px;
+            color:#dde7e5;
+        }
+        b{
+            display:inline-block;
+            width:7px;
+            height:4px;
+            background: url(../img/arrow.png) no-repeat;
+        }
+    }
+    .section{
+        background:#fff;
+        font-size:12px;
+        dl{
+            position: relative;
+          dt{
+              border-bottom: 1px solid #d4d4d4;
+              h4{
+                   margin-left:10px;
+                   color:#666666;
+                   font-weight: bold; 
+                   padding-bottom: 3px;
+                   padding-top:8px;
+               
+              }
+              p{
+                  padding-bottom: 3px;
+                  margin-left: 10px;
+                  a{
+                      line-height: 24px;
+                      margin-right:8px;
+                      color:#666666;
+                  }
+              }
+          } 
+//        .one{
+//            display:block;
+//        } 
+          dd{
+              position: absolute;
+              left:200px;
+              top:0px;
+              display:none;
+              width:522px;
+//            height:400px;
+              background:rgba(255,255,255,.9);
+              box-shadow: 0 0 5px #eee, 0 0 0px #eee, 0px 0px 0px #fff, 2px 2px 7px #fff;
+                
+              ul{
+//                width:240px;
+                  float:left;
+                  overflow: hidden;
+                  margin-left: 10px;
+                  padding-top:4px;
+                 
+                 
+                  li{
+                      width:240px;
+                      overflow: hidden;
+                      border-bottom:1px dotted #81665c;
+                      h5{
+                          font-size:14px;
+                          color:#666666;
+                          padding-right: 26px;
+                          float:left;
+                          
+                      }
+                      p{
+                          float:right;
+                          width:170px;
+                          padding-right: 18px;
+                          font-size: 12px;
+                          padding-bottom: 9px;
+                          a{
+                              padding:0 6px;
+                              color:#666666;
+                              line-height: 22px;
+                          }
+                      }
+                  }
+                  .ulRight{
+                      float:right;
+                      padding-left: 16px;
+                  }
+              }
+              
+          }
+        }
+    }
+}
+
 
 
 /*shopping common*/

@@ -105,3 +105,4 @@ class Carousel {
 		this.dots.children[this.dotIndex].className = 'active';
 	}
 }
+
