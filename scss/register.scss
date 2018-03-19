@@ -1,0 +1,32 @@
+/*head-top*/
+.head-top{
+    overflow: hidden;
+    border-bottom: 1px solid #bc0e31;
+    .cont{
+        width:1200px;
+        overflow: hidden;
+        margin:22px auto 26px;
+        .head-l{
+            width:316px;
+            height:57px;
+            float:left;
+            img{
+                width:316px;
+                height:53px;
+            }
+        }
+        .head-r{
+            float:right;
+            img{
+                width:556px;
+                height:57px;
+            }
+        }
+    }
+}
+.content{
+    width:1200px;
+    margin:0 auto;
+    height:579px;
+    background:pink;
+}

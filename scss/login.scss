@@ -1,0 +1,136 @@
+/*head-top*/
+.head-top{
+    overflow: hidden;
+    border-bottom: 1px solid #bc0e31;
+    .cont{
+        width:1200px;
+        overflow: hidden;
+        margin:22px auto 26px;
+        .head-l{
+            width:316px;
+            height:57px;
+            float:left;
+            img{
+                width:316px;
+                height:53px;
+            }
+        }
+        .head-r{
+            float:right;
+            img{
+                width:556px;
+                height:57px;
+            }
+        }
+    }
+}
+/*box-main*/
+.box-main{
+    width:1200px;
+    background:pink;
+    margin:0 auto;
+    margin-top:30px;
+    margin-bottom: 58px;
+    overflow: hidden;
+    .imgss{
+        float:left;
+        margin-left: 130px;
+    }
+    .login{
+        margin-left: 154px;
+        float:left;
+        width:413px;
+        height:403px;
+        border:1px solid #dddddd;
+        background:yellow;
+        .in{
+            width:413px;
+            overflow: hidden;
+            padding-left: 28px;
+            border-bottom: 1px dashed #cccccc;
+            .l-top{
+                margin:30px 0 26px 0px;
+                width:320px;
+                height:24px;
+                background:url(../img/login_text.gif) no-repeat;
+            }
+            input{
+                margin-bottom: 20px;
+            }
+            .an{
+                label{
+                font-size:12px;
+                color:#333333;
+                margin-left: 6px;
+                }
+            }
+            .inp{
+                width:298px;
+                height:30px;
+                border:1px solid #968d88;
+            }
+           
+            .error{
+                font-size:12px;
+                color:#f00;
+                display:none;
+                em{
+                    vertical-align: middle;
+                    display:inline-block;
+                    width:20px;
+                    height:20px;
+                    background:url(../img/error.gif) no-repeat;
+                }
+            }
+            
+            .btn{
+                border:none;
+                width:300px;
+                height:40px;
+                background:url(../img/btn_login.gif);
+            }
+            .wj:first-child{
+                margin-left: 16px;
+            }
+            .wj{
+                line-height: 40px;
+                margin-bottom: 7px;
+                a{
+                    color:#3472b2;
+                    font-size: 12px;
+                }    
+            }
+        }
+        .part{
+            padding-left: 28px;
+            p{
+                color:#999999;
+                font-size:12px;
+                line-height: 34px;
+                margin-bottom: 8px;
+            }
+            .clearfix{
+                a{
+                    width:48px;
+                    height:48px;
+                    display:inline-block;
+                }
+                .weixin{
+                    background:url(../img/icons11.png) no-repeat -103px -3px;
+                }
+                .alipay{
+                    background:url(../img/icons11.png) no-repeat -50px -3px;
+                }
+                .qq{
+                    background:url(../img/icons11.png) no-repeat 0px -3px;
+                }
+                .weibo{
+                    background:url(../img/icons11.png) no-repeat -155px -3px;
+                }
+            }
+           }
+    }
+}
+.b-license{
+    border-top:1px solid #cccccc;
+ }
