@@ -28,5 +28,159 @@
     width:1200px;
     margin:0 auto;
     height:579px;
-    background:pink;
+    margin-top:20px;
+    .register{
+        border:1px solid #d2d2ce;
+        float:left;
+        background:#f8f8f5;
+        font-size:12px;
+        padding:20px 18px 0 19px;
+        .top-h{
+            margin-bottom: 42px;
+            width:354px;
+            height:37px;
+            border-bottom: 1px solid #d2d2ce;
+            
+            b{
+                float:left;
+                font-size:12px;
+                color:#333333;
+                
+            }
+            a{
+                float:right;
+                font-size:12px;
+                font-weight: 100;
+                color:#0066cc;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+            
+        }
+        dl{
+            overflow: hidden;
+            font-size: 14px;
+            margin-bottom: 14px;
+            dt{
+               color:#363636;
+               float:left;
+               text-align: right;
+               line-height: 38px;
+            }
+            dd{
+               float:right;
+                .hd{
+                    text-indent: 6px;
+                    width:278px;
+                    height:37px;
+                    border:{
+                        left:1px solid #7d7d7d;
+                        top:1px solid #7d7d7d;
+                    }
+                }
+                .yzm{
+                    width:173px;
+                    height:37px;
+                    float:left;
+                }
+                .duanxin{
+                    float:left;
+                    margin-left: 1px;
+                    button{
+                        text-align: center;
+                        line-height:37px;
+                        height:41px;
+                        width:100px;
+                        color:#fff;
+                        background: #f45f03; 
+                        border:none; 
+                        font-size: 10px;
+                    }
+                }
+                .yzm2{
+                    margin-top:2px;
+                    float:left;
+                    width:100px;
+                    height:30px;
+                    background:burlywood;
+                    color:#fff;
+                    font-size:20px;
+                    line-height: 30px;
+                    text-align: center;
+                }
+                .inp,.yzm2{
+                     float:left;
+                }
+
+                .error{
+                    display:none;
+                    line-height: 18px;
+                    font-size:12px;
+                    color:#ff0000;
+                    em{
+                        vertical-align: middle;
+                        display:inline-block;
+                        width:20px;
+                        height:20px;
+                        background:url(../img/error.gif) no-repeat;
+                    }
+                }
+            }
+        }
+        .vip{
+            .check{
+                vertical-align: middle;
+                margin-left: 70px;
+            }
+        }
+        .viphidden{
+            display:none;
+            margin-top: 18px;
+            border:1px solid #eedaae;
+            width:345px;
+            height:60px;
+            background:#ffffe8;
+            padding-left: 10px;
+            .v{
+                margin:10px 10px 0 10px;
+                width:262px;
+                height:38px;
+                border:1px solid #a9a9a9;
+            }
+        }
+        .txt{
+            line-height: 40px;
+            .js{
+                margin-left: 84px;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+        }
+        .btu{
+            width:355px;
+            height:45px;
+            line-height:45px;
+            background:#bb0e30;
+            text-align: center;
+            margin-top: 14px;
+            margin-bottom: 10px;
+            a{
+                font-size:16px;
+                color:#fff;
+            }
+            
+        }
+    }
+    .imgs{
+        width:790px;
+        height:480px;
+        float:left;
+        background: url(../img/register_ads.jpg) no-repeat;
+        background-size: 790px 480px;
+    }
 }
+.b-license{
+    border-top:1px solid #cccccc;
+ }

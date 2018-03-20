@@ -27,7 +27,6 @@
 /*box-main*/
 .box-main{
     width:1200px;
-    background:pink;
     margin:0 auto;
     margin-top:30px;
     margin-bottom: 58px;
@@ -42,7 +41,6 @@
         width:413px;
         height:403px;
         border:1px solid #dddddd;
-        background:yellow;
         .in{
             width:413px;
             overflow: hidden;
@@ -56,6 +54,7 @@
             }
             input{
                 margin-bottom: 20px;
+                text-indent: 6px;
             }
             .an{
                 label{

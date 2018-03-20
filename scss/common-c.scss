@@ -1,0 +1,58 @@
+.head-top{
+    overflow: hidden;
+    border-bottom: 1px solid #bc0e31;
+    .cont{
+        width:1200px;
+        overflow: hidden;
+        margin:22px auto 26px;
+        .head-l{
+            width:316px;
+            height:57px;
+            float:left;
+            img{
+                width:316px;
+                height:53px;
+            }
+        }
+        .head-r{
+            float:right;
+            img{
+                width:556px;
+                height:57px;
+            }
+        }
+    }
+}
+.head-right{
+   padding-right: 30px;
+    .head-search{
+        form{
+        .search{
+            border:1px solid #dcd3cf;
+        }
+            .btn{
+                background:url(../img/bg_header5.png) 0 -230px;
+            }
+        }
+        
+    }
+}
+.mainNav{
+    background: #7e0001;
+    }
+.categorys {
+    background: rgba(0,0,0,.9);
+    .section{
+        display:none;
+    }
+}
+
+/*navMin*/
+.navMin{
+    font-size:12px;
+    line-height: 20px;
+    a{
+        color:#333333;
+        padding:0 10px;
+    }
+}
