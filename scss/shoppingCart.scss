@@ -84,5 +84,203 @@
                 line-height: 40px;
             }
         }
+        .sele{
+            line-height:32px;
+            background:#f1eeeb;
+            font-size:12px;
+            background:#f1eeeb url(../img/border.gif) repeat-x;
+            background-position: bottom;
+        }
+        .s-details{
+            height:124px;
+            table{
+                tbody{
+                    tr{
+                        td{
+                            
+                        }
+                        .left{
+                            font-size:12px;
+                            color:#666666;
+                            img{
+                                margin-top:10px;
+                            }
+                            a{
+                                
+                                color:#000;
+                            }
+                        }
+                        .numjian{
+                            vertical-align: middle;
+                            background:url(../img/cart_icon.png) no-repeat 0 -134px;
+                            width:13px;
+                            height:24px;
+                            display:inline-block;
+                            
+                        }
+                        .numjia{
+                            vertical-align: middle;
+                            width:13px;
+                            height:24px;
+                            display:inline-block;
+                            background:url(../img/cart_icon.png) no-repeat -45px -107px;
+                        }
+                        .num{
+                            input{
+                                width:30px;
+                                height:22px;
+                                border:1px solid #bea9a0;
+                                text-align: center;
+                                color:#666666;
+                            }
+                            
+                        }
+                        .dj_price{
+                            font-size: 14px;
+                            span{
+                                color:#c75050;
+                                font-weight: 100;
+                            }
+                        }
+                        .sc{
+                            font-size: 12px;
+                            color:#3172b2;
+                            text-align: center;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+        .list-b{
+            overflow: hidden;
+            background:#f1eeeb url(../img/border.gif) repeat-x;
+            background-position: top;
+            line-height:70px;
+            
+            ul li{
+                font-size:12px;
+                float:left;
+                input{
+                    vertical-align: middle;
+                    margin-left: 20px;
+                    margin-right: 4px;
+                }
+            }
+            .ulli{
+                margin-left:18px;
+            }
+            .ulli:hover{
+                text-decoration: underline;
+                color:blue;
+            }
+            
+        }
     }
 }
+/* suspension */
+.sus{
+    display:none;
+    position: fixed;
+    left:0;
+    bottom: 0;
+    line-height: 70px;
+    background:#eeeeee;
+    width:100%;
+    ul{
+        width:960px;
+        margin:0 auto;
+        li{
+            float:left;
+            a{
+                color:#666666;
+                font-size: 12px;
+            }
+            span{
+                vertical-align: middle;
+                display:inline-block;
+                width:20px;
+                height:20px;
+            }
+        }
+        .li1{
+            span{
+                background:url(../img/cart3.png) no-repeat 0px -200px;
+            }
+        }
+        .li2{
+            margin-left: 50px;
+            span{
+                background:url(../img/cart3.png) no-repeat 1px -241px;
+            }
+        }
+        .jiesuan{
+            color:#fff;
+            float:right;
+            width:210px;
+            line-height:50px;
+            background:#e55050;
+            margin-top:10px;
+            text-align: center;
+            font-size:24px;
+        }
+    }
+    
+}
+.last{
+    font-size:12px;
+    line-height:58px;
+    height:58px;
+    border-bottom: 1px solid #e0dad8;
+    ul{
+        float:right;
+        li{
+            margin:0 14px;
+            float:left;
+            color:#666666;
+            span{
+                color:#df3939;
+                margin-left: 8px;
+            }
+        }
+        .last-l{
+            color:#3172b2;
+        }
+    }
+}
+.tab{
+    width:960px;
+    height:360px;
+    margin:0 auto;
+    border:1px solid #ded7d1;
+    .menu{
+        height:30px;
+        background:#f1eeeb;
+        
+        li{
+            color:#363636;
+            font-size:12px;
+            float:left;
+            width:96px;
+            line-height:30px; 
+            text-align: center;
+            background:#f1eeeb;
+            border:{
+            right:1px solid #ded7d1;
+           }
+        }
+        .active{
+            background:#fff;
+        }
+    }
+    .panel{
+        display:none;   
+    }
+    .active{
+        display: block;
+    }
+}
+.b-license{
+    border-top:1px solid #cccccc;
+    margin-top:58px;
+ }

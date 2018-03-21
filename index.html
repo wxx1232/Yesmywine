@@ -98,6 +98,7 @@
 				<b class="arrow"></b>
 			</h3>
 			<div class="section">
+				<!--first-->
 				<dl class="first">
 					<dt>
 						<h4>葡萄酒</h4>
@@ -231,6 +232,7 @@
 						</ul>
 					</dd>
 				</dl>
+				<!--second-->
 				<dl>
 					<dt>
 						<h4>一键选酒</h4>
@@ -248,7 +250,7 @@
 					<dd>
 						<ul>
 							<li>
-								<h5>起泡酒</h5>
+								<h5>热门活动</h5>
 								<p>
 									<a href="">干起泡酒</a>
 									<a href="">半干起泡酒</a>
@@ -260,6 +262,7 @@
 						</ul>
 					</dd>
 				</dl>
+				<!--third-->
 				<dl>
 					<dt>
 						<h4>洋酒烈酒</h4>
@@ -277,7 +280,7 @@
 					<dd>
 						<ul>
 							<li>
-								<h5>起泡酒</h5>
+								<h5>种类</h5>
 								<p>
 									<a href="">干起泡酒</a>
 									<a href="">半干起泡酒</a>
@@ -288,6 +291,8 @@
 							</li>
 						</ul>
 					</dd>
+					<dl>
+						
 					<dt>
 						<h4>中国白酒</h4>
 						<p>
@@ -297,8 +302,29 @@
 							<a href="javascript:;">红花郎</a>
 						</p>
 					</dt>
-					<!--<dd></dd>-->
-				</dl>
+					<dd>
+						<ul>
+							<li>
+								<h5>白酒</h5>
+								<p>
+									<a href="">干红</a>
+									<a href="">半干红</a>
+									<a href="">甜红</a>
+									<a href="">半甜</a>
+								</p>
+							</li>
+							<li>
+								<h5>白酒</h5>
+								<p>
+									<a href="">干红</a>
+									<a href="">半干红</a>
+									<a href="">甜红</a>
+									<a href="">半甜</a>
+								</p>
+							</li>
+						</ul>
+					</dd>
+					</dl>
 				<dl>
 					<dt>
 						<h4>酒具周边</h4>
@@ -311,7 +337,20 @@
 							<a href="javascript:;">其他酒具</a>
 						</p>
 					</dt>
-					<!--<dd></dd>-->
+					<dd>
+						<ul>
+							<li>
+								<h5>酒具</h5>
+								<p>
+									<a href="">半干型雪莉酒</a>
+									<a href="">干型雪莉酒</a>
+									<a href="">甜型雪莉酒波特酒加强甜白</a>
+									<a href="">波特酒加强甜白</a>
+									<a href="">加强甜白</a>
+								</p>
+							</li>
+						</ul>
+					</dd>
 				</dl>
 				<dl>
 					<dt>
@@ -326,7 +365,27 @@
 							<a href="javascript:;">烧酒</a>
 						</p>
 					</dt>
-					<!--<dd></dd>-->
+					<dd>
+						<ul>
+							<li>
+								<h5>啤酒</h5>
+								<p>
+									<a href="">季风酒庄</a>
+									<a href="">斯皮尔酒庄</a>
+									<a href="">圣勒庄园</a>
+									<a href="">贝马格雷</a>
+									<a href="">黄金天使</a>
+									<a href="">教堂山酒</a>
+									<a href="">庄维纳酒庄</a>
+									<a href="">贝尔莱酒庄</a>
+									<a href="">帕索斯蒂芬</a>
+									<a href="">贝托纳酒庄</a>
+									<a href="">夏迪酒庄</a>
+									<a href="">维斯塔酒庄</a>
+								</p>
+							</li>
+						</ul>
+					</dd>
 				</dl>
 			</div>
 		</div>
@@ -1253,24 +1312,6 @@
 							</p>
 						</div>
 					</div>
-					<!--5-->
-					<div class="btfirst">
-						<div class="btHidden">
-							<b class="num">5</b>
-							<a class="show" href="javascript:;">康纳斯顿梅洛干红葡萄酒（黑标）</a>
-						</div>
-						<div class="firstD">
-							<div class="imgs">
-								<img class="pho" src="img/pic1.png" />
-								<em>5</em>
-							</div>
-							<p class="pls">
-								<a href="javascript:;">康纳斯顿梅洛干红葡萄酒（黑标）</a><br />
-								<b class="shouchu">售出 <span>304653</span></b><br />
-								<span>¥59.0</span>
-							</p>
-						</div>
-					</div>
 					
 				</div>
 			</div>
@@ -1715,7 +1756,9 @@
 <script src="js/banner.js"></script>
 <script src="js/input.js"></script>
 <script src="js/common.js"></script>
+<script src="js/tab.js"></script>
 <script src="js/index.js"></script>
+<script src="js/leftNav.js"></script>
 <script>
 	var carousel1 = document.getElementById('carousel1');
 	var carousel2 = document.getElementById('carousel2');
@@ -1727,11 +1770,7 @@
 		el: carousel2,
 		timeout: 5000
 	});
-		
-	$(".btfirst").mouseenter(function () {  
-      $(".btHidden").show();
-      $(".firstD").hide();
-	}); 
+	
 		
 	
 	$(".brandul li img").hover(

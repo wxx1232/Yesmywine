@@ -11,8 +11,52 @@
 .classify{
     margin:10px 8px 0 0px;
     width:200px;
-    height:1000px;
-    background:pink;
+    overflow: hidden;
+    .left-one{
+        border:1px solid #e6e1db;
+        .c-tit{
+            line-height:40px;
+            background:#e8e3dd;
+            h2{
+                color:#333333;
+                font-size:12px;
+                margin-left:22px;
+            }
+        }
+        .con{
+            h3{
+                font-size: 12px;
+                background:#fbfaf9;
+                border-bottom: 1px solid #e6e1db;
+                line-height: 40px;
+                font-weight: 100;
+                em{
+                    vertical-align: middle;
+                    margin:0 12px 0 12px;
+                    display:inline-block;
+                    width:16px;
+                    height:16px;
+                    background:url(../img/icons.png) no-repeat 0 -200px;
+                }
+            }
+            .active{
+                display:block;
+            }
+            ul {
+//              display:none;
+                padding:20px 0 20px 0px;
+                li{
+                    text-indent: 40px;
+                    font-size:12px;
+                    line-height: 24px;
+                    a{
+                        color:#666666;
+                    }
+                }
+            }
+        }
+    }
+    
 }
 .list-one{
     border:1px solid #e6e1db;
