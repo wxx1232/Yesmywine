@@ -39,7 +39,7 @@
         margin-left: 154px;
         float:left;
         width:413px;
-        height:403px;
+//      height:403px;
         border:1px solid #dddddd;
         .in{
             width:413px;
@@ -87,6 +87,8 @@
                 width:300px;
                 height:40px;
                 background:url(../img/btn_login.gif);
+                color:#fff;
+                font-size:20px;
             }
             .wj:first-child{
                 margin-left: 16px;

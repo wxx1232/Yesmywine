@@ -358,6 +358,9 @@
     margin-bottom: 88px;
 //  overflow: hidden;
     .piclist{
+        .pic:hover{
+            border-color:#c63f4e;
+        }
         .pic{
             float:left;
             margin-right:6px;

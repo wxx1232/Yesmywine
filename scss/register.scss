@@ -103,10 +103,10 @@
                     float:left;
                     width:100px;
                     height:30px;
-                    background:burlywood;
                     color:#fff;
                     font-size:20px;
-                    line-height: 30px;
+                    line-height:40px;
+                    height:40px;
                     text-align: center;
                 }
                 .inp,.yzm2{
@@ -114,17 +114,16 @@
                 }
 
                 .error{
-                    display:none;
                     line-height: 18px;
                     font-size:12px;
                     color:#ff0000;
-                    em{
-                        vertical-align: middle;
-                        display:inline-block;
-                        width:20px;
-                        height:20px;
-                        background:url(../img/error.gif) no-repeat;
-                    }
+//                  em{
+//                      vertical-align: middle;
+//                      display:inline-block;
+//                      width:20px;
+//                      height:20px;
+//                      background:url(../img/error.gif) no-repeat;
+//                  }
                 }
             }
         }
@@ -166,9 +165,13 @@
             text-align: center;
             margin-top: 14px;
             margin-bottom: 10px;
-            a{
-                font-size:16px;
+            .denglu{
+                background:#bb0e30;
+                font-size:20px;
                 color:#fff;
+                border:none;
+                width:355px;
+                height:45px;
             }
             
         }

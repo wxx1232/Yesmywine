@@ -28,18 +28,18 @@
 			<dl>
 				<dt>手机号码:</dt>
 				<dd>
-					<input type="text" class="hd" placeholder="请输入手机号"/>
-					<div class="error"><em></em>请输入手机号</div>
+					<input type="text" class="hd" name="username" id="username" placeholder="请输入手机号"/>
+					<div class="error1 error"></div>
 				</dd>
 			</dl>
 			<dl>
 				<dt>验证码:</dt>
 				<dd>
 					<div class="inp">
-						<input type="text" class="yzm" placeholder="请输入验证码"/>
-						<div class="error"><em></em>请输入手机号</div>
+						<input type="text" class="yzm" id="yzm" placeholder="请输入验证码"/>
 					</div>
-					<div class="yzm2" id="verify_num"></div>
+					<div class="yzm2" id="verify_num"></div><br /><br />
+					<div class="error4 error" id="error4" style="display:none;">验证码错误</div>
 				</dd>
 			</dl>
 			<dl>
@@ -52,13 +52,15 @@
 			<dl>
 				<dt>密码:</dt>
 				<dd>
-					<input type="text" class="hd" placeholder="请输入密码"/>
+					<input type="password" class="hd" id="userpass" name="userpass" placeholder="请输入密码"/>
+					<div class="error2 error"></div>
 				</dd>
 			</dl>
 			<dl>
 				<dt>确认密码:</dt>
 				<dd>
-					<input type="text" class="hd" placeholder="请确认密码"/>
+					<input type="password" class="hd" id="userpass2" name="userpass2" placeholder="请确认密码"/>
+					<div class="error3 error"></div>
 				</dd>
 			</dl>
 			<p class="vip">
@@ -74,8 +76,9 @@
 				<a href="javascript:;">《也买酒服务条款》</a>
 			</p>
 			<div class="btu">
-				<a href="javascript:;">注册完成</a>
+				<input type="button" id="btnlogin" class="denglu" value="登录"/>
 			</div>
+			<span id="ceshi" style="color:red;"></span>
 		</div>
 		<div class="imgs">
 			
@@ -107,3 +110,12 @@
 </html>
 <script src="js/jquery.1.8.3.js"></script>
 <script src="js/register.js"></script>
+<script src="js/gVerify.js"></script>
+	<script>
+		var verifyCode = new GVerify("verify_num");
+
+		document.getElementById("btnlogin").onclick = function(){
+			var res = verifyCode.validate(document.getElementById("yzm").value);
+				document.getElementById("error4").style.display="block";
+		}
+	</script>

@@ -63,9 +63,9 @@ function  goImg(transOrd) {
     let $img = $("#box img");
     //1、淡入淡出效果
     //让一张(outOrd)淡出 当前消失
-    $img.eq(outOrd).animate({"opacity":0},2000);
+    $img.eq(outOrd).animate({"opacity":0},3000);
     //让一张(ord)淡入下一张图片显示
-    $img.eq(ord).animate({"opacity":1},2000);
+    $img.eq(ord).animate({"opacity":1},3000);
     //2、改变豆豆的颜色；
    $("#box li").eq(ord).css({"backgroundColor":"#d3161b","opacity":"0.9"}).siblings().css({"backgroundColor":"#86685e"});
 }

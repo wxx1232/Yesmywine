@@ -3,6 +3,7 @@ var gulp = require("gulp");//类似于<script src="gulp.js">
 //引入gulp-sass插件（该插件完成sass的编译，编译成CSS）
 var sass = require("gulp-sass");
 
+
 //复制目录下的所有html文件
 //把根目录下的所有的html文件复制到发布目录下
 gulp.task("copy-html",function () {
@@ -12,6 +13,10 @@ gulp.task("copy-html",function () {
 //复制js文件
 gulp.task("copy-js",function(){
 	gulp.src("js/*.js").pipe(gulp.dest("D:\\phpStudy\\WWW\\Yesmywine\\js"));
+});
+gulp.task("copy-php",function () {
+    //复制文件
+    gulp.src("php/*.php").pipe(gulp.dest("D:\\phpStudy\\WWW\\Yesmywine\\php"));
 });
 
 //把img文件夹下所有的jpg文件复制到发布目录下
@@ -31,6 +36,8 @@ gulp.task("watchall",function () {
 	gulp.watch("*.html",["copy-html"]);
 	//监听js文件
 	gulp.watch("js/*.js",["copy-js"]);
+	//监听php文件
+	gulp.watch("php/*.php",["copy-php"]);
 	//监听图片
 	gulp.watch("img/**/*",["copy-jpg"]);
 	//监听sass

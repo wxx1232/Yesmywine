@@ -17,3 +17,26 @@ $("input[name='ph']").focus(function(){
         $(this).val(str).attr('name','ph');       
     }  
 }); 
+
+
+$(function () {
+    $("#btnlogin").click(function () {
+        $.ajax({
+           type:"POST",
+           url:"php/logincheck02.php",
+           data:{
+              "username":$("#username").val(),
+              "userpass":$("#userpass").val()
+           },
+            success:function (t) {
+                if(t=="1"){
+                    //保存cookie
+                    location.href="index.html";
+                }else{
+                    $("#error").html("用户名或者密码错误");
+                    $("#error").show();
+                }
+            }
+        });
+    });
+});

@@ -275,6 +275,29 @@
     }
     .panel{
         display:none;   
+        .firstD{
+            float:left;
+            margin:10px 10px;
+            width:238px;
+            height:131px;
+            border:1px solid #dddddd;
+            width: 186px;
+            height: 142px;
+            padding-left: 10px;
+            .imgs{
+                margin-left: 48px;
+            }
+            .pls{
+                float:left;
+                a{
+                    font-size:12px;
+                    color: #5b473d;
+                }
+                span{
+                    color:#c53f4c;
+                }
+            }
+        }
     }
     .active{
         display: block;

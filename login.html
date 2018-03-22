@@ -26,16 +26,17 @@
 		<div class="login">
 			<div class="in">
 				<div class="l-top"></div>
-					<input class="inp" name="ph" type="text" />
-					<p class="error"><em></em>请输入E-mail地址或手机号</p>
+					<input class="inp" name="ph" id="username" name="username" type="text" />
+					<p class="error" id="error"><em></em></p>
 					<br />
-					<input class="inp" type="password" name="mm" placeholder="请输入密码"/>
-					<p class="error"><em></em>请输入密码</p>
+					<input class="inp" type="password" id="userpass" name="userpass" name="mm" placeholder="请输入密码"/>
+					<p class="error" id="error"><em></em></p>
 					<br />
 					<p class="an">
 						<input class="inp2" type="checkbox"/><label>自动登录</label>
 					</p>
-					<button class="btn">登录</button>
+					<!--<button class="btn" id="btnlogin">登录</button>-->
+					<input type="button" class="btn" id="btnlogin" value="登录"/>
 					<p class="wj">
 						<a href="javascript:;">[忘记密码？]</a>
 						<a href="javascript:;">[注册新账号]</a>
